@@ -4,55 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yilong Wang</title>
-  <meta name="description" content="Yilong Wang — Master's student in Computer Science at Sun Yat-sen University." />
+  <meta name="description" content="Yilong Wang — M.S. student in Computer Science at Sun Yat-sen University." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="atmosphere" aria-hidden="true">
-    <div class="mesh"></div>
-    <div class="glow glow-a"></div>
-    <div class="glow glow-b"></div>
-  </div>
-
   <header class="top">
-    <span class="mark">YW</span>
-    <a class="mail-link" href="mailto:wangylong39@mail2.sysu.edu.cn">Contact</a>
+    <a class="mark" href="#top">Yilong Wang</a>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#internships">Internships</a>
+      <a href="#research">Research</a>
+      <a href="#awards">Awards</a>
+    </nav>
+    <a class="mail-link" href="mailto:wangylong39@mail2.sysu.edu.cn">Email</a>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
-      <p class="eyebrow reveal" style="--d: 0s">Personal site</p>
-      <h1 class="name reveal" style="--d: 0.08s">Yilong Wang</h1>
-      <p class="lede reveal" style="--d: 0.18s">
-        Master's student in Computer Science at Sun Yat-sen University.
-      </p>
-      <div class="cta reveal" style="--d: 0.28s">
-        <a class="btn" href="mailto:wangylong39@mail2.sysu.edu.cn">wangylong39@mail2.sysu.edu.cn</a>
-      </div>
+      <h1>Yilong Wang</h1>
+      <p>M.S. student in Computer Science, advised by Jianxing Yu.</p>
+      <a class="btn" href="mailto:wangylong39@mail2.sysu.edu.cn">wangylong39@mail2.sysu.edu.cn</a>
     </section>
 
-    <section class="education" id="education">
-      <h2 class="section-title reveal" style="--d: 0.36s">Education</h2>
+    <section id="education">
+      <h2>Education</h2>
       <ul class="timeline">
-        <li class="reveal" style="--d: 0.44s">
-          <div class="when">Present</div>
+        <li>
+          <div class="when">M.S. · Year 1</div>
           <div class="what">
             <h3>Sun Yat-sen University</h3>
-            <p>M.S. in Computer Science and Technology</p>
+            <p>Computer Science and Technology</p>
+            <p class="note">Advisor: Jianxing Yu</p>
           </div>
         </li>
-        <li class="reveal" style="--d: 0.52s">
-          <div class="when">Bachelor</div>
+        <li>
+          <div class="when">B.S.</div>
           <div class="what">
             <h3>Shandong University</h3>
-            <p>B.S. in Computer Science and Technology</p>
-            <p class="note">Future Network Experimental Class</p>
+            <p>Computer Science and Technology · Future Network Experimental Class</p>
+            <p class="note">Outstanding Graduate of Shandong University</p>
           </div>
         </li>
       </ul>
+    </section>
+
+    <section id="internships">
+      <h2>Internships</h2>
+      <article class="job">
+        <header>
+          <h3>Lizhi Group</h3>
+          <p>AI Algorithm Intern, Artificial Intelligence Department</p>
+          <time>Jul 2026 – Oct 2026</time>
+        </header>
+        <ul>
+          <li>Optimized the model for a virtual-companion product. Trained separate dialogue and skill LoRAs with asymmetric disentangled fine-tuning, so the two tasks no longer share one conflicting update.</li>
+          <li>Built a role-playing harness for multi-turn consistency: context compression, dynamic gating, and intention-aware decoding. With the team, set up the RoleTension benchmark. Role consistency stayed above 95%, and the persona-collapse rate stayed within 3%.</li>
+          <li>Deployed the model on 2× A100 with SGLang. The same line of work is written up as a first-author paper, now under review.</li>
+        </ul>
+      </article>
+      <article class="job">
+        <header>
+          <h3>Tuyoo Games</h3>
+          <p>AI Algorithm Intern, Koi Lab</p>
+          <time>Dec 2025 – Mar 2026</time>
+        </header>
+        <ul>
+          <li>Improved the RAG stack for the AI companion in <em>Three Kingdoms</em> and <em>Ice Age</em>. Added tool calls for data lookup and numeric calculation, and cut answer errors with an error-case library plus iterative retrieval and prompts. User satisfaction rose from 85% to 96%.</li>
+          <li>Pre-trained a decoder-only model for Fight the Landlord. Encoded each state as hand, history, and summary tokens, and trained in stages from rule following to bidding and card play. Mixed-precision training, OneCycleLR, and multi-GPU data parallelism shortened training. Match strength surpassed DouZero.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <ul class="papers">
+        <li>
+          <div class="tags"><span>Under review</span></div>
+          <h3>RoleFAD: Optimizing Robustness in Role-playing Agents based on Decoupling of Heterogeneous Tasks</h3>
+          <p>No public link yet.</p>
+        </li>
+        <li>
+          <div class="tags"><span>SCI Q2</span><span>2025</span></div>
+          <h3>
+            <a href="https://doi.org/10.1016/j.apr.2025.102502" target="_blank" rel="noopener">How to forecast daily carbon emissions during public health emergencies: A novel self-attention multi-neuron time series model</a>
+          </h3>
+          <p>Atmospheric Pollution Research</p>
+        </li>
+        <li>
+          <div class="tags"><span>SCI Q1</span><span>2025</span></div>
+          <h3>
+            <a href="https://doi.org/10.1016/j.dss.2025.114401" target="_blank" rel="noopener">Panoramic sales insight: Using multimodal fusion to improve the effectiveness of flash sales</a>
+          </h3>
+          <p>Decision Support Systems</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul class="award-list">
+        <li>
+          <span>National First Prize</span>
+          <p>18th National College Student Software Innovation Competition</p>
+        </li>
+        <li>
+          <span>National First Prize</span>
+          <p>27th China Robot and Artificial Intelligence Competition</p>
+        </li>
+        <li>
+          <span>National First Prize</span>
+          <p>19th Challenge Cup, Artificial Intelligence+ Special Contest</p>
+        </li>
+      </ul>
+
+      <div class="carousel" data-carousel>
+        <button class="nav-btn prev" type="button" aria-label="Previous certificate">‹</button>
+        <div class="track" tabindex="0">
+          <figure class="slide">
+            <img src="awards/software-innovation-national-first.jpg" alt="National first prize certificate, 18th National College Student Software Innovation Competition" />
+            <figcaption>National First Prize · Software Innovation Competition</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="awards/ai-innovation-national-first.jpg" alt="National first prize certificate, 27th China Robot and Artificial Intelligence Competition" />
+            <figcaption>National First Prize · China Robot and AI Competition</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="awards/aigc-national-excellence.png" alt="National excellence award certificate, 2024 CCCC AIGC Innovation Contest" />
+            <figcaption>National Excellence Award · 2024 AIGC Innovation Contest</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="awards/mobile-app-regional-first.jpg" alt="East China first prize certificate, 2025 CCCC Mobile Application Innovation Contest" />
+            <figcaption>East China First Prize · 2025 Mobile Application Innovation Contest</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="awards/service-outsourcing-national-third.png" alt="National third prize certificate, 15th China College Student Service Outsourcing Competition" />
+            <figcaption>National Third Prize · Service Outsourcing Competition</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="awards/fanruan-cup-national-third.jpg" alt="National third prize certificate, 4th FanRuan Cup data analysis competition" />
+            <figcaption>National Third Prize · 4th FanRuan Cup</figcaption>
+          </figure>
+        </div>
+        <button class="nav-btn next" type="button" aria-label="Next certificate">›</button>
+      </div>
+      <div class="dots" data-dots></div>
     </section>
   </main>
 
@@ -62,6 +160,35 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const root = document.querySelector("[data-carousel]");
+    const track = root.querySelector(".track");
+    const slides = [...track.children];
+    const dots = document.querySelector("[data-dots]");
+    let index = 0;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.setAttribute("aria-label", "Award " + (i + 1));
+      dot.addEventListener("click", () => go(i));
+      dots.appendChild(dot);
+    });
+
+    function go(next) {
+      index = (next + slides.length) % slides.length;
+      const slide = slides[index];
+      track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: "smooth" });
+      [...dots.children].forEach((dot, i) => dot.classList.toggle("on", i === index));
+    }
+
+    root.querySelector(".prev").addEventListener("click", () => go(index - 1));
+    root.querySelector(".next").addEventListener("click", () => go(index + 1));
+    track.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") go(index + 1);
+      if (event.key === "ArrowLeft") go(index - 1);
+    });
+    go(0);
   </script>
 </body>
 </html>
