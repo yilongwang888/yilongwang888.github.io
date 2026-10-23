@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yilong Wang</title>
+  <meta name="description" content="Yilong Wang — Master's student in Computer Science at Sun Yat-sen University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="mesh"></div>
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+  </div>
+
+  <header class="top">
+    <span class="mark">YW</span>
+    <a class="mail-link" href="mailto:wangylong39@mail2.sysu.edu.cn">Contact</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow reveal" style="--d: 0s">Personal site</p>
+      <h1 class="name reveal" style="--d: 0.08s">Yilong Wang</h1>
+      <p class="lede reveal" style="--d: 0.18s">
+        Master's student in Computer Science at Sun Yat-sen University.
+      </p>
+      <div class="cta reveal" style="--d: 0.28s">
+        <a class="btn" href="mailto:wangylong39@mail2.sysu.edu.cn">wangylong39@mail2.sysu.edu.cn</a>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="section-title reveal" style="--d: 0.36s">Education</h2>
+      <ul class="timeline">
+        <li class="reveal" style="--d: 0.44s">
+          <div class="when">Present</div>
+          <div class="what">
+            <h3>Sun Yat-sen University</h3>
+            <p>M.S. in Computer Science and Technology</p>
+          </div>
+        </li>
+        <li class="reveal" style="--d: 0.52s">
+          <div class="when">Bachelor</div>
+          <div class="what">
+            <h3>Shandong University</h3>
+            <p>B.S. in Computer Science and Technology</p>
+            <p class="note">Future Network Experimental Class</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Yilong Wang</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
